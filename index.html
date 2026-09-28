@@ -1,0 +1,797 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Fest 2026</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#home">
+                🎓 COLLEGE FEST 2026
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">Schedule</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#registration">
+                            Registration
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>COLLEGE FEST 2026</h1>
+
+            <p>
+                Celebrate • Compete • Create • Connect
+            </p>
+
+            <p>
+                Welcome to the biggest celebration of talent,
+                creativity and innovation!
+            </p>
+
+            <a href="#events" class="btn btn-warning btn-lg">
+                Explore Events
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ANNOUNCEMENT ================= -->
+
+    <section class="announcement">
+
+        <div class="container">
+
+            <h3>📢 Latest Announcement</h3>
+
+            <p id="announcementText">
+                Registration is now open for all college festival events!
+            </p>
+
+            <button class="btn btn-dark"
+                onclick="changeAnnouncement()">
+                View Update
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EVENTS ================= -->
+
+    <section id="events" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>🎯 Festival Events</h2>
+
+                <p>
+                    Participate in exciting technical and cultural events.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Event 1 -->
+
+                <div class="col-md-4">
+
+                    <div class="event-card">
+
+                        <div class="event-icon">
+                            💻
+                        </div>
+
+                        <h3>Code Challenge</h3>
+
+                        <p>
+                            Test your programming skills and solve
+                            exciting coding problems.
+                        </p>
+
+                        <p>
+                            📅 10 October 2026<br>
+                            ⏰ 10:00 AM<br>
+                            📍 Computer Lab
+                        </p>
+
+                        <button class="btn btn-primary"
+                            onclick="selectEvent('Code Challenge')">
+                            Register
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Event 2 -->
+
+                <div class="col-md-4">
+
+                    <div class="event-card">
+
+                        <div class="event-icon">
+                            🎤
+                        </div>
+
+                        <h3>Singing Competition</h3>
+
+                        <p>
+                            Showcase your singing talent and win exciting prizes.
+                        </p>
+
+                        <p>
+                            📅 10 October 2026<br>
+                            ⏰ 2:00 PM<br>
+                            📍 Auditorium
+                        </p>
+
+                        <button class="btn btn-primary"
+                            onclick="selectEvent('Singing Competition')">
+                            Register
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Event 3 -->
+
+                <div class="col-md-4">
+
+                    <div class="event-card">
+
+                        <div class="event-icon">
+                            💃
+                        </div>
+
+                        <h3>Dance Competition</h3>
+
+                        <p>
+                            Bring your best moves and perform on the festival stage.
+                        </p>
+
+                        <p>
+                            📅 11 October 2026<br>
+                            ⏰ 11:00 AM<br>
+                            📍 Main Stage
+                        </p>
+
+                        <button class="btn btn-primary"
+                            onclick="selectEvent('Dance Competition')">
+                            Register
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Event 4 -->
+
+                <div class="col-md-4">
+
+                    <div class="event-card">
+
+                        <div class="event-icon">
+                            🤖
+                        </div>
+
+                        <h3>Robotics Expo</h3>
+
+                        <p>
+                            Present innovative robotics and automation projects.
+                        </p>
+
+                        <p>
+                            📅 11 October 2026<br>
+                            ⏰ 1:00 PM<br>
+                            📍 Innovation Hall
+                        </p>
+
+                        <button class="btn btn-primary"
+                            onclick="selectEvent('Robotics Expo')">
+                            Register
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Event 5 -->
+
+                <div class="col-md-4">
+
+                    <div class="event-card">
+
+                        <div class="event-icon">
+                            🎨
+                        </div>
+
+                        <h3>Art Competition</h3>
+
+                        <p>
+                            Express your creativity through colours and design.
+                        </p>
+
+                        <p>
+                            📅 12 October 2026<br>
+                            ⏰ 10:00 AM<br>
+                            📍 Seminar Hall
+                        </p>
+
+                        <button class="btn btn-primary"
+                            onclick="selectEvent('Art Competition')">
+                            Register
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Event 6 -->
+
+                <div class="col-md-4">
+
+                    <div class="event-card">
+
+                        <div class="event-icon">
+                            🧠
+                        </div>
+
+                        <h3>Quiz Competition</h3>
+
+                        <p>
+                            Challenge your knowledge in our exciting quiz event.
+                        </p>
+
+                        <p>
+                            📅 12 October 2026<br>
+                            ⏰ 2:00 PM<br>
+                            📍 Seminar Hall
+                        </p>
+
+                        <button class="btn btn-primary"
+                            onclick="selectEvent('Quiz Competition')">
+                            Register
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SCHEDULE ================= -->
+
+    <section id="schedule" class="section schedule-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>📅 Event Schedule</h2>
+
+                <p>Festival schedule and venue details</p>
+
+            </div>
+
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered table-hover">
+
+                    <thead class="table-dark">
+
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Event</th>
+                            <th>Venue</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>10 Oct</td>
+                            <td>10:00 AM</td>
+                            <td>Code Challenge</td>
+                            <td>Computer Lab</td>
+                        </tr>
+
+                        <tr>
+                            <td>10 Oct</td>
+                            <td>2:00 PM</td>
+                            <td>Singing Competition</td>
+                            <td>Auditorium</td>
+                        </tr>
+
+                        <tr>
+                            <td>11 Oct</td>
+                            <td>11:00 AM</td>
+                            <td>Dance Competition</td>
+                            <td>Main Stage</td>
+                        </tr>
+
+                        <tr>
+                            <td>11 Oct</td>
+                            <td>1:00 PM</td>
+                            <td>Robotics Expo</td>
+                            <td>Innovation Hall</td>
+                        </tr>
+
+                        <tr>
+                            <td>12 Oct</td>
+                            <td>10:00 AM</td>
+                            <td>Art Competition</td>
+                            <td>Seminar Hall</td>
+                        </tr>
+
+                        <tr>
+                            <td>12 Oct</td>
+                            <td>2:00 PM</td>
+                            <td>Quiz Competition</td>
+                            <td>Seminar Hall</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="gallery" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>📸 Event Gallery</h2>
+
+                <p>Memories from our college festival</p>
+
+            </div>
+
+
+            <div class="gallery">
+
+                <div class="gallery-item">
+                    <img src="images/event1.jpg"
+                        alt="College Event">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/event2.jpg"
+                        alt="College Event">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/event3.jpg"
+                        alt="College Event">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/event4.jpg"
+                        alt="College Event">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/event5.jpg"
+                        alt="College Event">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/event6.jpg"
+                        alt="College Event">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REGISTRATION ================= -->
+
+    <section id="registration" class="section registration-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>📝 Event Registration</h2>
+
+                <p>Register for your favourite event</p>
+
+            </div>
+
+
+            <div class="registration-card">
+
+                <form id="registrationForm">
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Participant Name
+                        </label>
+
+                        <input type="text"
+                            id="participantName"
+                            class="form-control"
+                            placeholder="Enter your name">
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Email
+                        </label>
+
+                        <input type="email"
+                            id="participantEmail"
+                            class="form-control"
+                            placeholder="Enter your email">
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Mobile Number
+                        </label>
+
+                        <input type="tel"
+                            id="mobile"
+                            class="form-control"
+                            placeholder="Enter mobile number">
+
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+
+                            <label class="form-label">
+                                Department
+                            </label>
+
+                            <select id="department"
+                                class="form-select">
+
+                                <option value="">
+                                    Select Department
+                                </option>
+
+                                <option>CSE</option>
+                                <option>IT</option>
+                                <option>ECE</option>
+                                <option>EEE</option>
+                                <option>MECH</option>
+                                <option>CIVIL</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="col-md-6 mb-3">
+
+                            <label class="form-label">
+                                Year
+                            </label>
+
+                            <select id="year"
+                                class="form-select">
+
+                                <option value="">
+                                    Select Year
+                                </option>
+
+                                <option>1st Year</option>
+                                <option>2nd Year</option>
+                                <option>3rd Year</option>
+                                <option>4th Year</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Select Event
+                        </label>
+
+                        <select id="event"
+                            class="form-select">
+
+                            <option value="">
+                                Select Event
+                            </option>
+
+                            <option>Code Challenge</option>
+                            <option>Singing Competition</option>
+                            <option>Dance Competition</option>
+                            <option>Robotics Expo</option>
+                            <option>Art Competition</option>
+                            <option>Quiz Competition</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button type="submit"
+                        class="btn btn-success w-100">
+
+                        Submit Registration
+
+                    </button>
+
+                </form>
+
+
+                <!-- Success Message -->
+
+                <div id="successMessage"
+                    class="alert alert-success mt-4 d-none">
+
+                    Registration successful!
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>📞 Contact Us</h2>
+
+                <p>Have questions? Contact the festival team.</p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Contact Details -->
+
+                <div class="col-md-5">
+
+                    <div class="contact-card">
+
+                        <h3>College Fest Team</h3>
+
+                        <p>
+                            📍 Prathyusha Engineering College
+                        </p>
+
+                        <p>
+                            📧 collegefest@example.com
+                        </p>
+
+                        <p>
+                            📱 +91 98765 43210
+                        </p>
+
+                        <p>
+                            🕐 Monday - Friday: 9:00 AM - 5:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact Form -->
+
+                <div class="col-md-7">
+
+                    <div class="contact-card">
+
+                        <form id="contactForm">
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Name
+                                </label>
+
+                                <input type="text"
+                                    id="contactName"
+                                    class="form-control"
+                                    placeholder="Your name">
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Email
+                                </label>
+
+                                <input type="email"
+                                    id="contactEmail"
+                                    class="form-control"
+                                    placeholder="Your email">
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Message
+                                </label>
+
+                                <textarea id="message"
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Enter your message"></textarea>
+
+                            </div>
+
+
+                            <button type="submit"
+                                class="btn btn-primary">
+
+                                Send Message
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container text-center">
+
+            <h4>🎓 College Fest 2026</h4>
+
+            <p>
+                Celebrate talent. Inspire creativity. Build memories.
+            </p>
+
+            <p>
+                © 2026 College Fest. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Custom JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
